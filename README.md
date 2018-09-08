@@ -1,36 +1,51 @@
 # shadow-clj-fullstack
 
-FIXME: description
+Example of full-stack Clojure/Script project
 
-## Installation
+## Stack
 
-Download from http://example.com/FIXME.
+- `clojure` <3
+- `timbre` for logging
+- `mount` for state management
+- `pedestal` for web server and `geheimtur` for Oauth2 protection
+- `hiccup` for HTML generation on server side
+- `wrench` for managing configuration via environment variabes
+- `garden` for generating CSS with `garden-gnome` to watch changes
+- `shadow-cljs` for compiling clojure-script and hot code reload
+- `reagent` for rendering hiccup-like forms as React components
+- `re-frame` for frontend state-management
+- `bidi` & `pushy` for single-page-app navigation
 
-## Usage
+## Development
 
-FIXME: explanation
+Copy `dev/config-example.edn` to `dev/config.edn` and fill empty variables.
 
-    $ java -jar shadow-clj-fullstack-0.1.0-standalone.jar [args]
+Install both NPM and Leiningen:
 
-## Options
+    brew install leiningen node yarn
+    
+Now you are ready to start project locally
 
-FIXME: listing of options this app accepts.
+    yarn install
+    lein repl
+    > (reset)
 
-## Examples
+This would
+ 
+- start a local web-server on 8080 port
+- start shadow-cljs server with hot-reload of your javascript
+- start garden-gnome, which will compile your styles and watch for changes 
+  (chadow-cljs will pick up those changes on frontend)
+  
+  
+### CSS styles with Garden
 
-...
+Styles are compiled from `src/css/styles.clj` with [Garden](https://github.com/noprompt/garden)
 
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
 
 ## License
 
-Copyright © 2018 FIXME
+Copyright © 2018 Anton Chebotaev
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
