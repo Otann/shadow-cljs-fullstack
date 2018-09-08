@@ -1,0 +1,8 @@
+{:lein   true
+ :builds {:app {:output-dir "resources/public/js"
+                :asset-path "/js"
+                :target     :browser
+                :modules    {:index {:entries [shadow-clj-fullstack.index]}}
+                :devtools   {:watch-dir    "resources/public"
+                             :after-load   shadow-clj-fullstack.index/reload!
+                             :repl-init-ns shadow-clj-fullstack.index}}}}

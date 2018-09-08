@@ -1,0 +1,5 @@
+{"HTTP_PORT"            "8080"
+ "BASE_URL"             "http://localhost:8080"
+ ;; TODO: provide your client-id and client-secret
+ "GITHUB_CLIENT_ID"     "TODO"
+ "GITHUB_CLIENT_SECRET" "TODO"}

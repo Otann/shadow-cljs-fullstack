@@ -1,0 +1,4 @@
+[{:source-path "src/css"
+  :stylesheet  shadow-clj-fullstack.styles/screen
+  :compiler    {:output-to     "resources/public/css/screen.css"
+                :pretty-print? true}}]

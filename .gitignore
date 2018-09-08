@@ -9,3 +9,10 @@ pom.xml.asc
 /.nrepl-port
 .hgignore
 .hg/
+
+dev/config.edn
+resources/public/js
+resources/public/css
+
+.shadow-cljs
+node_modules
