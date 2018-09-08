@@ -1,6 +1,9 @@
 # shadow-clj-fullstack
 
-Example of full-stack Clojure/Script project
+Example of full-stack Clojure/Script project which uses shadow-cljs for clojure-script compilation.
+
+It allows using any arbitrary NPM dependencies, like `"@blueprintjs/core"` which is 
+close to impossible with `lein-cljsbuild`.
 
 ## Stack
 
@@ -24,7 +27,7 @@ Install both NPM and Leiningen:
 
     brew install leiningen node yarn
     
-Now you are ready to start project locally
+Now you are ready to start the project locally
 
     yarn install
     lein repl
