@@ -38,8 +38,8 @@
   :uberjar-name "shadow-clj-fullstack.jar"
   :main shadow-clj-fullstack.main
 
-  :aliases {"js-watch" ["run" "-m" "shadow.cljs.devtools.clj" "watch" "app"]
-            "js-build" ["run" "-m" "shadow.cljs.devtools.clj" "build" "app"]}
+  :aliases {"js-watch" ["run" "-m" "shadow.cljs.devtools.cli" "watch" "app"]
+            "js-build" ["run" "-m" "shadow.cljs.devtools.cli" "release" "app"]}
 
   :profiles {:dev     {:repl-options {:init-ns user}
                        :source-paths ["dev"]
