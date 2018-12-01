@@ -38,12 +38,12 @@ This would
 - start a local web-server on 8080 port
 - start shadow-cljs server with hot-reload of your javascript
 - start garden-gnome, which will compile your styles and watch for changes 
-  (chadow-cljs will pick up those changes on frontend)
+  (shadow-cljs will pick up those changes on frontend)
   
   
 ### CSS styles with Garden
 
-Styles are compiled from `src/css/styles.clj` with [Garden](https://github.com/noprompt/garden)
+Styles are compiled from `src/css/styles.clj` with [Garden](https://github.com/noprompt/garden).
 
 
 ## License
